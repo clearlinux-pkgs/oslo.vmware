@@ -44,7 +44,7 @@ logilab-common-python
 astroid-python
 oslo.utils
 iso8601
-suds
+suds-jurko
 netifaces
 urllib3
 eventlet

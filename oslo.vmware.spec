@@ -4,7 +4,7 @@
 #
 Name     : oslo.vmware
 Version  : 1.21.0
-Release  : 17
+Release  : 18
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-1.21.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-1.21.0.tar.gz
 Summary  : Oslo VMware library
@@ -18,15 +18,14 @@ BuildRequires : Sphinx-python
 BuildRequires : WebOb-python
 BuildRequires : astroid-python
 BuildRequires : coverage-python
-BuildRequires : debtcollector-python
 BuildRequires : discover-python
 BuildRequires : docutils-python
 BuildRequires : eventlet
 BuildRequires : extras
 BuildRequires : extras-python
-BuildRequires : fasteners-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
+BuildRequires : funcsigs-python
 BuildRequires : greenlet
 BuildRequires : hacking
 BuildRequires : httplib2
@@ -35,7 +34,6 @@ BuildRequires : linecache2-python
 BuildRequires : logilab-common-python
 BuildRequires : markupsafe-python
 BuildRequires : mccabe-python
-BuildRequires : monotonic-python
 BuildRequires : mox3-python
 BuildRequires : netaddr-python
 BuildRequires : netifaces
@@ -67,7 +65,7 @@ BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : six-python
 BuildRequires : stevedore
-BuildRequires : suds
+BuildRequires : suds-jurko
 BuildRequires : testrepository-python
 BuildRequires : testscenarios
 BuildRequires : testtools
@@ -77,7 +75,6 @@ BuildRequires : traceback2-python
 BuildRequires : unittest2-python
 BuildRequires : urllib3
 BuildRequires : virtualenv
-BuildRequires : wrapt-python
 
 %description
 =============
@@ -88,6 +85,11 @@ The Oslo VMware library provides support for common VMware operations and APIs.
 %package python
 Summary: python components for the oslo.vmware package.
 Group: Default
+Requires: Babel-python
+Requires: oslo.i18n-python
+Requires: requests-python
+Requires: six-python
+Requires: stevedore
 
 %description python
 python components for the oslo.vmware package.
