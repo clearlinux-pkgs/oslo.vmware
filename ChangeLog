@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.2.1
+-----
+
+* Python 3 deprecated the logger.warn method in favor of warning
+* Put py34 first in the env order of tox
+* assertIsNone(val) instead of assertEqual(None,val)
+
 2.2.0
 -----
 
