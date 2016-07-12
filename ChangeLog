@@ -1,6 +1,46 @@
 CHANGES
 =======
 
+2.10.0
+------
+
+* Updated from global requirements
+
+2.9.0
+-----
+
+* Imported Translations from Zanata
+
+2.8.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Refactor VmdkWriteHandle and VmdkReadHandle
+* Updated from global requirements
+* Add reno for release notes management
+* Support download of virtual disk in ova container
+* Updated from global requirements
+* Updated from global requirements
+
+2.7.0
+-----
+
+* Updated from global requirements
+* Trivial: ignore openstack/common in flake8 exclude list
+
+2.6.0
+-----
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Should not raise Exception before connection close
+* Remove explicit use of asserts
+* Move bandit into pep8
+
 2.5.0
 -----
 
