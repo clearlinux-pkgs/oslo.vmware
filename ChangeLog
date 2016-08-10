@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.12.0
+------
+
+* Updated from global requirements
+* Add http_method to download_stream_optimized_data
+* Refactor the image transfer
+* Remove discover from test-requirements
+* Updated from global requirements
+
 2.11.0
 ------
 
