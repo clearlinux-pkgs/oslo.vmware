@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+2.14.0
+------
+
+* Updated from global requirements
+* Fix TypeError:six.StringIO(resp.content) must be str or None, not bytes
+
+2.13.0
+------
+
+* Method to download file to VMware server
+
 2.12.0
 ------
 
