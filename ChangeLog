@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+2.15.0
+------
+
+* Enable release notes translation
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Update home page link in cfg file
+* Updated from global requirements
+* Set pool size for HTTPS connections
+* Update reno for stable/newton
+
 2.14.0
 ------
 
@@ -11,6 +24,7 @@ CHANGES
 ------
 
 * Method to download file to VMware server
+* Pass connection timeout so that invoke_api will not wait forever
 
 2.12.0
 ------
