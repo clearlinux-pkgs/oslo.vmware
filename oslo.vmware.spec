@@ -4,7 +4,7 @@
 #
 Name     : oslo.vmware
 Version  : 2.15.0
-Release  : 37
+Release  : 38
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.15.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.15.0.tar.gz
 Summary  : Oslo VMware library
