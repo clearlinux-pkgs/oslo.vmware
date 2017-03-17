@@ -1,6 +1,50 @@
 CHANGES
 =======
 
+2.18.0
+------
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Improve unit test coverage
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* Add in support for removeKey
+* Use https for references to openstack.org
+* Update reno for stable/ocata
+
+2.17.0
+------
+
+* Fix setting the SOAP headers for remote calls
+* Remove references to Python 3.4
+* Updated from global requirements
+* Remove some useless log messages
+* Add operation ID for remote calls
+* Fix image meta-data update for Glance v2
+* Add Constraints support
+* Updated from global requirements
+
+2.16.0
+------
+
+* Files with no code must be left completely empty
+* Add 'uncommitted' field to the 'Datastore' class
+* Add SPBM WSDL for vSphere 6.5
+* Show team and repo badges on README
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Trivial fixes to the usage doc
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Remove mox3 in test-requirement.txt
+* [TrivialFix] Replace 'assertTrue(a in b)' with 'assertIn(a, b)'
+* Updated from global requirements
+
 2.15.0
 ------
 
@@ -13,6 +57,7 @@ CHANGES
 * Updated from global requirements
 * Set pool size for HTTPS connections
 * Update reno for stable/newton
+* Improve logging for task updates
 
 2.14.0
 ------
