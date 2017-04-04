@@ -1,12 +1,19 @@
 CHANGES
 =======
 
+2.19.0
+------
+
+* Trivial: Remove testscenarios from test-requirements.txt
+* Remove log translations
+
 2.18.0
 ------
 
 * Updated from global requirements
 * [Fix gate]Update test requirement
 * Updated from global requirements
+* Make the mock call in MemoryCacheTest forward-compatible
 * Updated from global requirements
 * Updated from global requirements
 * Improve unit test coverage
