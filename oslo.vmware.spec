@@ -6,7 +6,7 @@
 #
 Name     : oslo.vmware
 Version  : 2.19.0
-Release  : 46
+Release  : 47
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.19.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.19.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.19.0.tar.gz.asc
