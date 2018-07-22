@@ -1,6 +1,129 @@
 CHANGES
 =======
 
+2.31.0
+------
+
+* Utility method to check SDRS enabled status
+* Add function for getting recommended datastore
+* Add utility function for datastore clusters
+* Switch to stestr
+
+2.30.0
+------
+
+* Add release notes link to README
+* Add traversal spec for datastoreFolder
+* Fix docstring which breaks doc generation
+* fix tox python3 overrides
+
+2.29.2
+------
+
+
+2.29.1
+------
+
+* Specify CA store when making secure connections with urllib3
+
+2.29.0
+------
+
+* Fix session re-establish failure with PBM APIs
+* Refactor \_start\_transfer
+* PBM WSDL for vSphere 6.7
+* Remove stale pip-missing-reqs tox test
+* fix a typo:s/extention/extension
+* Trivial: Update pypi url to new url
+* set default python to python3
+
+2.28.0
+------
+
+* fix lower constraints and uncap eventlet
+* Updated from global requirements
+* add lower-constraints job
+* pypy is not checked at gate
+* Updated from global requirements
+
+2.27.0
+------
+
+* Updated from global requirements
+* Update links in README
+* Updated from global requirements
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Update reno for stable/queens
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+2.26.0
+------
+
+* Cleanup test-requirements
+* Updated from global requirements
+* Fix the repeating titles
+
+2.25.0
+------
+
+* Remove -U from pip install
+* Avoid tox\_install.sh for constraints support
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+
+2.24.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Update reno for stable/pike
+* Updated from global requirements
+
+2.23.0
+------
+
+* Update URLs in documents according to document migration
+* rearrange existing documentation to fit the new standard layout
+* Switch from oslosphinx to openstackdocstheme
+* Enable warning-is-error in doc build
+* Use request\_handler() for ExtensionManager APIs
+* Improving cover testenv
+
+2.22.1
+------
+
+* Add hacking rule to prevent log translations
+
+2.22.0
+------
+
+* Updated from global requirements
+
+2.21.0
+------
+
+* Do not prune some special XML elements which are empty
+* Updated from global requirements
+
+2.20.0
+------
+
+* Updated from global requirements
+* Wrong member variable name in class Datastore
+* Make sure host in maintenance mode excluded from image upload
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
 2.19.0
 ------
 
@@ -17,7 +140,7 @@ CHANGES
 * Updated from global requirements
 * Updated from global requirements
 * Improve unit test coverage
-* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo\_xyz)
 * Add in support for removeKey
 * Use https for references to openstack.org
 * Update reno for stable/ocata
@@ -76,13 +199,13 @@ CHANGES
 ------
 
 * Method to download file to VMware server
-* Pass connection timeout so that invoke_api will not wait forever
+* Pass connection timeout so that invoke\_api will not wait forever
 
 2.12.0
 ------
 
 * Updated from global requirements
-* Add http_method to download_stream_optimized_data
+* Add http\_method to download\_stream\_optimized\_data
 * Refactor the image transfer
 * Remove discover from test-requirements
 * Updated from global requirements
@@ -160,7 +283,7 @@ CHANGES
 * Updated from global requirements
 * Imported Translations from Zanata
 * Updated from global requirements
-* Use oslo_utils reflection to get function name
+* Use oslo\_utils reflection to get function name
 
 2.2.1
 -----
@@ -213,10 +336,10 @@ CHANGES
 * clean up auto-doc api build
 * do not show the full release history in the main table of contents
 * clean up readme and documentation titles
-* Change ignore-errors to ignore_errors
+* Change ignore-errors to ignore\_errors
 * Updated from global requirements
 * Add support for using HTTP POST in VmdkWriteHandle
-* Add unit tests for FileHandle._create_connection
+* Add unit tests for FileHandle.\_create\_connection
 * Update the documentation
 
 1.21.0
@@ -306,7 +429,7 @@ CHANGES
 * Add support for dynamicProperty
 * Remove support for Python 3.3
 * Updated from global requirements
-* Remove run_cross_tests.sh
+* Remove run\_cross\_tests.sh
 * Use suds-jurko on Python 2
 * Updated from global requirements
 * Imported Translations from Transifex
@@ -335,13 +458,13 @@ CHANGES
 
 * Switch to non-namespaced module imports
 * Imported Translations from Transifex
-* Move missing tests to new oslo_vmware location
+* Move missing tests to new oslo\_vmware location
 
 0.11.0
 ------
 
 * Imported Translations from Transifex
-* Add get_datastore_by_ref method to oslo.vmware
+* Add get\_datastore\_by\_ref method to oslo.vmware
 * Change use of random to random.SystemRandom
 
 0.10.0
@@ -361,7 +484,7 @@ CHANGES
 
 * Imported Translations from Transifex
 * Updated from global requirements
-* Correct usage to oslo_vmware
+* Correct usage to oslo\_vmware
 * Fix line wrapping
 * Updated from global requirements
 * Correct the doc usage example
@@ -373,7 +496,7 @@ CHANGES
 * Updated from global requirements
 * Move files out of the namespace package
 * Use ToggleLazy fixture from oslo.i18n
-* Use _is_valid_ipv6 from oslo.utils
+* Use \_is\_valid\_ipv6 from oslo.utils
 * Allow checking api session
 * Updated from global requirements
 * Updated from global requirements
@@ -397,7 +520,7 @@ CHANGES
 
 * Updated from global requirements
 * Imported Translations from Transifex
-* Activate pep8 check that _ is imported
+* Activate pep8 check that \_ is imported
 * Do not log when reraising an exception
 * Imported Translations from Transifex
 * Updated from global requirements
@@ -442,7 +565,7 @@ CHANGES
 * Updated from global requirements
 * Refactoring to reduce noise in log files
 * Imported Translations from Transifex
-* Add missing session parameter to get_summary
+* Add missing session parameter to get\_summary
 * Updated from global requirements
 * Switch off caching to prevent cache poisoning by local attacker
 * Support for copying streamOptimized disk to file
@@ -454,7 +577,7 @@ CHANGES
 0.5.0
 -----
 
-* _trunc_id to check if the session_id is not None
+* \_trunc\_id to check if the session\_id is not None
 * Port the Datastore and DatastorePath objects
 * Log additional details of suds faults
 * Enabled hacking check H305
@@ -470,7 +593,7 @@ CHANGES
 * Do not log the full session ID
 * Refactor the PBM support
 * Fix wrong usage of assertRaises
-* Translations: make use of _LE, _LI and _LW
+* Translations: make use of \_LE, \_LI and \_LW
 
 0.4.0
 -----
@@ -491,14 +614,14 @@ CHANGES
 * Support 'InvalidPowerState' exception
 * Don't translate debug level logs in oslo-vmware
 * Updated from global requirements
-* Sync changes from Nova error_util.py
+* Sync changes from Nova error\_util.py
 * Updated from global requirements
-* Remove __del__ usage in oslo.vmware driver
-* Add a test to oslo.vmware test_image_transfer
-* import run_cross_tests.sh from incubator
+* Remove \_\_del\_\_ usage in oslo.vmware driver
+* Add a test to oslo.vmware test\_image\_transfer
+* import run\_cross\_tests.sh from incubator
 * Fix vim25:InvalidRequest when no profiles exist
 * VMware: treat cases when SOAP reply does not have a body
-* Add unittest method "test_download_flat_image"
+* Add unittest method "test\_download\_flat\_image"
 * Add missing unit tests for VMwareAPISession
 
 0.3
@@ -512,7 +635,7 @@ CHANGES
 * PBM related utility methods
 * Add PBM client for policy based placement
 * Updated from global requirements
-* Replace unicode() for six.text_type
+* Replace unicode() for six.text\_type
 
 0.2
 ---
