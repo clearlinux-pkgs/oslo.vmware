@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+2.32.1
+------
+
+* Add DVS utility methods
+* Check if there is a context set before updating the store
+* Imported Translations from Zanata
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* Set request context when polling vCenter tasks
+* import zuul job settings from project-config
+* py37: deal with Exception repr changes
+* Update reno for stable/rocky
+
 2.31.0
 ------
 
