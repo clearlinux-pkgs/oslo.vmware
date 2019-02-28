@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.32.2
+------
+
+* add python 3.7 unit test job
+* Use template for lower-constraints
+* Change openstack-dev to openstack-discuss
+* delete useless indent
+* Clean up .gitignore references to personal tools
+
 2.32.1
 ------
 

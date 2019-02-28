@@ -5,17 +5,17 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : oslo.vmware
-Version  : 2.32.1
-Release  : 50
-URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.1.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.1.tar.gz
-Source99 : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.1.tar.gz.asc
+Version  : 2.32.2
+Release  : 51
+URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz
+Source99 : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz.asc
 Summary  : Oslo VMware library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: oslo.vmware-python3
-Requires: oslo.vmware-license
-Requires: oslo.vmware-python
+Requires: oslo.vmware-license = %{version}-%{release}
+Requires: oslo.vmware-python = %{version}-%{release}
+Requires: oslo.vmware-python3 = %{version}-%{release}
 Requires: PyYAML
 Requires: eventlet
 Requires: lxml
@@ -34,8 +34,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/oslo.vmware.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the oslo.vmware package.
@@ -64,20 +67,21 @@ python3 components for the oslo.vmware package.
 
 
 %prep
-%setup -q -n oslo.vmware-2.32.1
+%setup -q -n oslo.vmware-2.32.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537929366
+export SOURCE_DATE_EPOCH=1551396383
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/oslo.vmware
-cp LICENSE %{buildroot}/usr/share/doc/oslo.vmware/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/oslo.vmware
+cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.vmware/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -88,7 +92,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/oslo.vmware/LICENSE
+/usr/share/package-licenses/oslo.vmware/LICENSE
 
 %files python
 %defattr(-,root,root,-)
