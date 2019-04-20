@@ -6,7 +6,7 @@
 #
 Name     : oslo.vmware
 Version  : 2.32.2
-Release  : 51
+Release  : 52
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-2.32.2.tar.gz.asc
