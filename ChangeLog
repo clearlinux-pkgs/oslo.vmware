@@ -1,10 +1,21 @@
 CHANGES
 =======
 
+2.33.0
+------
+
+* OpenDev Migration Patch
+* Fix invalid escape sequence warning
+* Fix doc build error under Python 3
+* Update master for stable/stein
+* Return None if no suitable datastore is found
+* SDRS recommendation for create VM
+
 2.32.2
 ------
 
 * add python 3.7 unit test job
+* Change python3.5 job to python3.7 job on Stein+
 * Use template for lower-constraints
 * Change openstack-dev to openstack-discuss
 * delete useless indent
