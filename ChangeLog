@@ -1,10 +1,21 @@
 CHANGES
 =======
 
+2.34.0
+------
+
+* Dropping the py35 testing
+* Ensure that log message with non-ascii code does not raise exception
+* Set locale to english
+* Update NFC lease progress
+* Add nosec to skip bandit check
+* Replace git.openstack.org URLs with opendev.org URLs
+
 2.33.0
 ------
 
 * OpenDev Migration Patch
+* When looping call fails do not log the exception trace
 * Fix invalid escape sequence warning
 * Fix doc build error under Python 3
 * Update master for stable/stein
