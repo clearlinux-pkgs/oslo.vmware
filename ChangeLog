@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.35.0
+------
+
+* Pass "store\_id" to backend when transfer volume to image
+* tox: Trivial cleanup
+* Switch to Ussuri jobs
+* tox: Keeping going with docs
+* Update master for stable/train
+
 2.34.1
 ------
 
