@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.0.0
+-----
+
+* [ussuri][goal] Drop python 2.7 support and testing
+
 2.35.0
 ------
 
