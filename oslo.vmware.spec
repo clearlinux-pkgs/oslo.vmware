@@ -6,7 +6,7 @@
 #
 Name     : oslo.vmware
 Version  : 3.1.0
-Release  : 61
+Release  : 62
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.1.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.1.0.tar.gz.asc
@@ -50,8 +50,32 @@ BuildRequires : urllib3
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/oslo.vmware.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+=================================================
+oslo.vmware --- VMware support code for OpenStack
+=================================================
+
+.. image:: https://img.shields.io/pypi/v/oslo.vmware.svg
+    :target: https://pypi.org/project/oslo.vmware/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/dm/oslo.vmware.svg
+    :target: https://pypi.org/project/oslo.vmware/
+    :alt: Downloads
+
+The Oslo VMware library provides support for common VMware operations
+and APIs.
+
+* License: Apache License, Version 2.0
+* Documentation: https://docs.openstack.org/oslo.vmware/latest/
+* Source: https://opendev.org/openstack/oslo.vmware
+* Bugs: https://bugs.launchpad.net/oslo.vmware
+* Release notes: https://docs.openstack.org/releasenotes/oslo.vmware/
 
 %package license
 Summary: license components for the oslo.vmware package.
@@ -74,6 +98,7 @@ python components for the oslo.vmware package.
 Summary: python3 components for the oslo.vmware package.
 Group: Default
 Requires: python3-core
+Provides: pypi(oslo.vmware)
 
 %description python3
 python3 components for the oslo.vmware package.
@@ -88,7 +113,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582741576
+export SOURCE_DATE_EPOCH=1583195388
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
