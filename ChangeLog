@@ -1,12 +1,18 @@
 CHANGES
 =======
 
+3.2.0
+-----
+
+
 3.1.0
 -----
 
 * remove outdated header
+* Ensure lease polling raises proper exception
 * reword releasenote for py27 support dropping
 * Adds standard file operation functions
+* Add ability to change read chunk size
 
 3.0.0
 -----
