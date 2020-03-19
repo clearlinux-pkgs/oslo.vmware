@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.2.1
+-----
+
+* Fix object has no attribute 'readinto' in Python3
+* Update the tox minversion parameter
+
 3.2.0
 -----
 
