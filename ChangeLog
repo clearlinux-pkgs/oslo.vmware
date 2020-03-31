@@ -1,11 +1,18 @@
 CHANGES
 =======
 
+3.3.0
+-----
+
+* Update hacking for Python3
+
 3.2.1
 -----
 
 * Fix object has no attribute 'readinto' in Python3
 * Update the tox minversion parameter
+* Pass "base\_image\_ref" to backend when transfer volume to image
+* Drop use of six
 
 3.2.0
 -----
