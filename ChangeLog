@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.3.1
+-----
+
+* Use unittest.mock instead of third party mock
+* Document disable flake8/hacking warnings
+
 3.3.0
 -----
 

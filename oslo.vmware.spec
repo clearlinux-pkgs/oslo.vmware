@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.vmware
-Version  : 3.3.0
-Release  : 66
-URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.0.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.0.tar.gz.asc
+Version  : 3.3.1
+Release  : 67
+URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.1.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.3.1.tar.gz.asc
 Summary  : Oslo VMware library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -73,34 +73,34 @@ Summary: python3 components for the oslo.vmware package.
 Group: Default
 Requires: python3-core
 Provides: pypi(oslo.vmware)
-Requires: pypi(eventlet)
-Requires: pypi(oslo.i18n)
 Requires: pypi(oslo.context)
-Requires: pypi(pbr)
-Requires: pypi(urllib3)
-Requires: pypi(oslo.concurrency)
-Requires: pypi(suds_jurko)
+Requires: pypi(oslo.i18n)
+Requires: pypi(stevedore)
+Requires: pypi(netaddr)
 Requires: pypi(oslo.utils)
 Requires: pypi(lxml)
-Requires: pypi(pyyaml)
-Requires: pypi(stevedore)
+Requires: pypi(pbr)
+Requires: pypi(oslo.concurrency)
+Requires: pypi(suds_jurko)
 Requires: pypi(requests)
-Requires: pypi(netaddr)
+Requires: pypi(urllib3)
+Requires: pypi(eventlet)
+Requires: pypi(pyyaml)
 
 %description python3
 python3 components for the oslo.vmware package.
 
 
 %prep
-%setup -q -n oslo.vmware-3.3.0
-cd %{_builddir}/oslo.vmware-3.3.0
+%setup -q -n oslo.vmware-3.3.1
+cd %{_builddir}/oslo.vmware-3.3.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1585681196
+export SOURCE_DATE_EPOCH=1586273823
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -117,7 +117,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.vmware
-cp %{_builddir}/oslo.vmware-3.3.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.vmware/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/oslo.vmware-3.3.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.vmware/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
