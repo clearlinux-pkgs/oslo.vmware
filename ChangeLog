@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.6.0
+-----
+
+* Add backend-independent access to cookiejar
+
 3.5.0
 -----
 
