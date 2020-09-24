@@ -6,7 +6,7 @@
 #
 Name     : oslo.vmware
 Version  : 3.7.0
-Release  : 71
+Release  : 72
 URL      : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.7.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.7.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.vmware/oslo.vmware-3.7.0.tar.gz.asc
